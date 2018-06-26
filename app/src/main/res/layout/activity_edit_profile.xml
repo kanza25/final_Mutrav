@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@drawable/gradientbackground"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="21sp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_contacts_black_24dp"
+        android:inputType="textPersonName"
+        android:textColor="#849A8D"
+        android:drawablePadding="@dimen/activity_half"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+        android:inputType="textPersonName"
+        android:textColor="#849A8D"
+        android:drawablePadding="@dimen/activity_half"
+        android:hint="phone number" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:inputType="textPersonName"
+        android:textColor="#849A8D"
+        android:drawablePadding="@dimen/activity_half"
+        android:hint="Email" />
+    <TextView
+        android:id="@+id/tvpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/pass"
+        android:textColor="@color/startblue"
+        android:text="Change Password"
+        android:textSize="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#000"
+        />
+    <LinearLayout
+        android:background="@drawable/gradientbackground"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="21sp"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/etlang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableLeft="@drawable/language"
+        android:inputType="textPersonName"
+        android:textColor="#849A8D"
+        android:drawablePadding="@dimen/activity_half"
+        android:hint="Language" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="25dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/btn_update"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/dot_light_screen1"
+            android:text="Update"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="22dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/btn_back"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/dot_light_screen1"
+            android:text="Back"
+            android:layout_marginLeft="110dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="22dp" />
+    </LinearLayout>
+</LinearLayout>

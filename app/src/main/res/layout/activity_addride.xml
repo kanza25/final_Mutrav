@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/activity_half"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#849A8D"
+        android:hint="Name" />
+    <EditText
+        android:id="@+id/ettype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#849A8D"
+        android:drawablePadding="@dimen/activity_half"
+        android:hint="Type of vehicle" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/activity_half"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#849A8D"
+        android:hint="Phone number" />
+
+        <Spinner
+            android:id="@+id/spinnergender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextName"
+            android:entries="@array/gender" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etcarnum"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/activity_half"
+            android:ems="10"
+            android:hint="Car number"
+            android:inputType="textPersonName"
+            android:textColor="#849A8D" />
+
+        <EditText
+            android:id="@+id/etcar_name"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/activity_half"
+            android:ems="10"
+            android:hint="Vehicle Name"
+            android:inputType="textPersonName"
+            android:textColor="#849A8D" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/etseats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#849A8D"
+        android:drawablePadding="@dimen/activity_half"
+        android:hint="Total number of seats" />
+
+    <EditText
+        android:id="@+id/etsource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#849A8D"
+        android:drawablePadding="@dimen/activity_half"
+        android:hint="Source" />
+    <EditText
+        android:id="@+id/etdestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#849A8D"
+        android:drawablePadding="@dimen/activity_half"
+        android:hint="Destination" />
+
+    <TextView
+        android:id="@+id/txt_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/etfare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#849A8D"
+        android:drawablePadding="@dimen/activity_half"
+        android:hint="Per Person Fare"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_addride"
+        android:background="@drawable/rounded_corner"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="22dp"
+        android:backgroundTint="@color/dot_light_screen1"
+        android:text="Post Ride"/>
+</LinearLayout>

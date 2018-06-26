@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search"
+            android:title="Find Ride" />
+        <item
+            android:id="@+id/nav_addrides"
+            android:icon="@drawable/ic_playlist"
+            android:title="Add Ride" />
+
+        <item
+            android:id="@+id/nav_rides"
+            android:icon="@drawable/ic_history"
+            android:title="My Rides" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_details"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/setting"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send to Specific" />
+
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/rating"
+                android:title="Rate App" />
+        </menu>
+    </item>
+
+    <item android:title="logout">
+        <menu>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit"
+                android:title="Exit" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_signout"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+</menu>

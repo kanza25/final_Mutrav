@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/img_flag"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_flag"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/img_flag"
+        android:layout_toRightOf="@+id/img_flag"
+        android:layout_weight="1"
+        android:text="Date"
+        android:textColor="#f04f23"
+        app:layout_constraintStart_toEndOf="@+id/img_flag"
+        app:layout_constraintTop_toBottomOf="@+id/src" />
+
+
+    <TextView
+        android:id="@+id/src"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/img_flag"
+        android:layout_toRightOf="@+id/img_flag"
+        android:layout_weight="1"
+        android:autoText="false"
+        android:text="Source To Destination"
+        android:textColor="#f04f23"
+        android:textColorLink="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_flag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_flag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Time"
+        android:textColor="#f04f23"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/src" />
+
+    <TextView
+        android:id="@+id/fair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/date"
+        android:layout_alignBottom="@+id/date"
+        android:layout_alignEnd="@+id/src"
+        android:layout_alignRight="@+id/src"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Fair Estimate"
+        android:textColor="#f04f23"
+        app:layout_constraintStart_toEndOf="@+id/time"
+        app:layout_constraintTop_toBottomOf="@+id/src" />
+
+
+</android.support.constraint.ConstraintLayout>
